@@ -81,31 +81,31 @@ export const Product = () => {
   return (
     <div className='max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 mx-auto'>
       <div className='max-w-2xl mx-auto text-center mb-10 lg:mb-14'>
-        <h2 className='text-2xl font-bold md:text-4xl md:leading-tight dark:text-white'>
+        <h2 className='text-2xl font-bold md:text-4xl md:leading-tight '>
           Our Models
         </h2>
-        <p className='mt-1 text-gray-600 dark:text-neutral-400'>
+        <p className='mt-1 text-gray-600 '>
           Explore our range of cutting-edge electric vehicles.
         </p>
       </div>
 
       {/* Search Bar */}
-      <div className='mb-6 text-center'>
+      <div className='mb-6 text-center bg-white'>
         <input
           type='text'
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className='w-full p-3 border rounded-lg dark:bg-neutral-800 dark:text-white'
+          className='w-full p-3 border rounded-lg bg-white '
           placeholder='Search for a model...'
         />
       </div>
 
       {/* Filter Dropdown */}
-      <div className='mb-6 text-center'>
+      <div className='mb-6 text-center bg-white'>
         <select
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
-          className='p-3 border rounded-lg dark:bg-neutral-800 dark:text-white'
+          className='p-3 border rounded-lg bg-white'
         >
           <option value=''>Filter by price</option>
           <option value='low'>Under $50,000</option>
@@ -120,7 +120,7 @@ export const Product = () => {
           <Link
             key={product.id} // Use unique product ID
             href={`/models/${product.id}`} // Properly link to the dynamic route
-            className='group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition duration-300 rounded-xl p-5 dark:border-neutral-700 dark:hover:border-transparent dark:shadow-black/40'
+            className='group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition duration-300 rounded-xl p-5 '
           >
             <div className='aspect-w-16 aspect-h-11'>
               <img
@@ -130,13 +130,11 @@ export const Product = () => {
               />
             </div>
             <div className='my-6'>
-              <h3 className='text-xl font-semibold text-gray-800 dark:text-neutral-300'>
+              <h3 className='text-xl font-semibold text-gray-800 '>
                 {product.title}
               </h3>
-              <p className='mt-5 text-gray-600 dark:text-neutral-400'>
-                {product.description}
-              </p>
-              <p className='mt-3 text-lg font-semibold text-gray-900 dark:text-white'>
+              <p className='mt-5 text-gray-600 '>{product.description}</p>
+              <p className='mt-3 text-lg font-semibold text-gray-900 '>
                 {product.price}
               </p>
             </div>

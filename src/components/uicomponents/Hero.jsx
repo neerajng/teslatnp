@@ -40,7 +40,7 @@ export const Hero = () => {
       data-hs-carousel='{"loadingClasses": "opacity-0"}'
       className='relative mt-20 scroll-m-20'
     >
-      <div className='hs-carousel relative overflow-hidden w-[90vw] h-[30rem] md:h-[calc(100vh-106px)] bg-gray-100 rounded-2xl dark:bg-neutral-800'>
+      <div className='hs-carousel relative overflow-hidden w-[90vw] h-[30rem] md:h-[calc(100vh-106px)] '>
         <div className='hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0'>
           {carouselItems.map((item, index) => (
             <div key={index} className='hs-carousel-slide'>

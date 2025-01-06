@@ -57,42 +57,38 @@ const ProductDetail = () => {
           alt={product.title}
           className='w-full max-w-md mt-5 rounded-lg '
         />
-        <p className='mt-5 text-gray-600 dark:text-neutral-400 break-all'>
-          {product.description}
-        </p>
-        <p className='text-lg font-semibold text-gray-900 dark:text-white break-all'>
+        <p className='mt-5 text-gray-600  break-all'>{product.description}</p>
+        <p className='text-lg font-semibold text-gray-900  break-all'>
           {product.price}
         </p>
 
         {/* Display Variants and Configurations */}
         <div className='mt-2'>
-          <h4 className='font-semibold text-gray-800 dark:text-neutral-300 break-all'>
+          <h4 className='font-semibold text-gray-800 break-all'>
             Available Variants:
           </h4>
           <ul className='list-disc pl-5 break-all'>
             {product.variants.map((variant, idx) => (
-              <li key={idx} className='text-gray-600 dark:text-neutral-400'>
+              <li key={idx} className='text-gray-600 '>
                 {variant}
               </li>
             ))}
           </ul>
 
-          <h4 className='font-semibold text-gray-800 dark:text-neutral-300 mt-2 break-all'>
+          <h4 className='font-semibold text-gray-800  mt-2 break-all'>
             Available Configurations:
           </h4>
           <ul className='list-disc pl-5 break-all'>
             {product.configurations.map((config, idx) => (
-              <li key={idx} className='text-gray-600 dark:text-neutral-400'>
+              <li key={idx} className='text-gray-600 '>
                 {config}
               </li>
             ))}
           </ul>
         </div>
       </div>
-      <div className='md:w-[40%] flex flex-col'>
-        <h4 className='font-semibold text-gray-800 dark:text-neutral-300'>
-          Select Variant (Color)
-        </h4>
+      <div className='md:w-[40%] flex flex-col md:mt-0 mt-6 px-2'>
+        <h4 className='font-semibold text-gray-800 '>Select Variant (Color)</h4>
 
         <div className='mt-3 flex space-x-4'>
           {/* Black Color Option */}
@@ -121,7 +117,7 @@ const ProductDetail = () => {
         </div>
 
         {/* Display selected color */}
-        <p className='mt-4 text-lg text-gray-800 dark:text-neutral-300'>
+        <p className='mt-4 text-lg text-gray-800 '>
           Selected Color:{' '}
           <span className='font-semibold'>
             {selectedColor

@@ -28,7 +28,7 @@ export const Header = () => {
           <div className='lg:hidden'>
             <button
               type='button'
-              className='hs-collapse-toggle relative size-7 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10'
+              className='hs-collapse-toggle relative size-7 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none  '
               id='hs-navbar-example-collapse'
               aria-expanded='false'
               aria-controls='hs-navbar-example'
@@ -84,7 +84,7 @@ export const Header = () => {
                 className={`text-xs underline-none font-medium px-2 py-1 rounded-sm ${
                   activeNav === item.label
                     ? 'text-black '
-                    : 'text-black hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500'
+                    : 'text-black hover:text-gray-400 focus:outline-none focus:text-gray-400 '
                 }`}
                 aria-current={activeNav === item.label ? 'page' : undefined}
               >

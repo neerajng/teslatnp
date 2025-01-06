@@ -58,12 +58,10 @@ export const KeyFeatures = () => {
                 />
               </div>
               <div className='grow'>
-                <h3 className='text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-neutral-300 dark:group-hover:text-white'>
+                <h3 className='text-xl font-semibold text-gray-800 group-hover:text-gray-600 '>
                   {card.title}
                 </h3>
-                <p className='mt-3 text-gray-600 dark:text-neutral-400 '>
-                  {card.description}
-                </p>
+                <p className='mt-3 text-gray-600 '>{card.description}</p>
               </div>
             </div>
           </a>
