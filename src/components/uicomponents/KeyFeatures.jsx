@@ -37,7 +37,7 @@ export const KeyFeatures = () => {
   return (
     <div
       id='features'
-      className='scroll-m-20 max-w-[70rem] px-4 py-4 sm:px-6 lg:px-8 '
+      className='scroll-m-20 max-w-[100rem] px-4 py-4 sm:px-6 lg:px-8 '
     >
       <div className='w-full text-center text-3xl font-semibold'>
         Key Features

@@ -9,7 +9,9 @@ export const Main = () => {
       <div className='flex justify-center'>
         <Hero />
       </div>
-      <KeyFeatures />
+      <div className='flex justify-center'>
+        <KeyFeatures />
+      </div>
       <Performance />
       <Sustainability />
     </div>
