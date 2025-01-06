@@ -47,7 +47,7 @@ export const Performance = () => {
   return (
     <div
       id='performance'
-      className='scroll-m-20 bg-black px-8 flex flex-col items-center h-auto pb-6'
+      className='scroll-m-20 bg-black px-2 lg:px-8 flex flex-col items-center h-auto pb-6'
     >
       <div className='w-full text-center text-3xl font-semibold text-white pt-4'>
         Next-Level Performance
@@ -67,7 +67,7 @@ export const Performance = () => {
         />
         Your browser does not support the video tag.
       </video>
-      <div className='flex flex-col lg:flex-row font-light mx-12 border-2 border-gray-800 rounded-xl '>
+      <div className='flex flex-col lg:flex-row font-light mx-2 border-2 border-gray-800 rounded-xl '>
         <div className=''>
           {/* Drive Section */}
           <div className='w-full text-white flex flex-col justify-center  p-6 shadow-md '>

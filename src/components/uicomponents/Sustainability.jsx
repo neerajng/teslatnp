@@ -20,9 +20,9 @@ export const Sustainability = () => {
   return (
     <div
       id='sustainability'
-      className='flex flex-col justify-center px-12 py-4 h-full scroll-mt-20 '
+      className='flex flex-col justify-center px-2 lg:px-8 py-4 h-full scroll-mt-20 '
     >
-      <div className='flex pb-4 justify-center font-bold'>
+      <div className='flex pb-4 justify-center font-bold text-center'>
         Impact Report 2025 A Sustainable Future is Within Reach
       </div>
       <div className='grid grid-cols-1 lg:grid-cols-3 items-center border border-red-700 divide-y lg:divide-y-0 lg:divide-x divide-neutral-700 rounded-xl'>
